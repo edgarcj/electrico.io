@@ -1,0 +1,253 @@
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* HEADER >>>>>>>>>>>>>>>>>>>>>>>> */
+
+.main-box {
+  /*Positioning*/
+  position: relative;
+  top: 0;
+  left: 0;
+  /*Box Model*/
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 12px;
+  /*Visual*/
+  background-color: #73c2fb;
+}
+
+.foco {
+  /*Positioning*/
+  position: relative;
+  top: 0px;
+  left: 0px;
+  margin: 10px;
+  /*Box-Model*/
+  display: flex;
+  width: 53vh;
+  height: 53vh;
+  /*Visual*/
+  border: 6px solid white;
+  box-shadow: inset 0 0 4em 2rem rgba(255, 255, 237, 0.788),
+    1em 1em 0.5em rgba(0, 0, 0, 0.493);
+  transition: box-shadow 600ms ease-out, background-color 300ms ease;
+  border-radius: 50%;
+}
+
+.foco:hover {
+  background-color: rgba(255, 255, 238, 0.479);
+  box-shadow: inset 0 0 0.5em 0.5em white, 0 0 4em 2.5em white;
+  cursor: pointer;
+}
+/*Whatspp Button +++++++++++++++++++*/
+
+/*MENU+++++++++++++++++++++++++ */
+.menu-contain {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 10vh;
+  border-radius: 5px;
+  background-color: black;
+  box-shadow: 0.5em 1em 0.5em rgba(0, 0, 0, 0.493);
+  transition: box-shadow 600ms ease-in;
+}
+
+.menu:hover {
+  box-shadow: 0.2em 0.5em 0.5em rgba(0, 0, 0, 0.493);
+}
+
+.menu a {
+  width: 100%;
+  font-weight: 800;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+
+/*SERVICIOS************************************ */
+h2,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./assets/main_image.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.servicios {
+  position: relative;
+  text-align: center;
+  background-color: orange;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100vh;
+  font-size: 1.5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-y: scroll;
+}
+
+.servicios ul {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.servicios ul li {
+  padding: 0.5rem;
+}
+
+/* Ubicación ++++++++++++++++++++++ */
+.ubicacion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 100vh;
+  background-color: rgb(0, 255, 179);
+  font-size: 1.5rem;
+}
+
+.ubicacion iframe {
+  display: flex;
+  width: 75%;
+  height: 85vh;
+}
+/*Pie de Página++++++++++++++++++++++++++++++++*/
+.foot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: black;
+  width: 100%;
+  height: 10vh;
+}
+
+.foot a {
+  color: white;
+  text-decoration: none;
+}
+/*Redes+++++++++++++++++++++++++++++++++++++*/
+.redes {
+  position: fixed;
+  display: flex;
+  bottom: 90px;
+  right: 70px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: #00bb2d;
+  box-shadow: 2px 2px 3px #999;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.whatsapp:hover {
+  background-color: #009723;
+}
+
+.phone {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  background-color: #dddddd;
+  box-shadow: 2px 2px 3px #999;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.phone:hover {
+  background-color: #b1b1b1;
+}
+
+.email {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 170px;
+  background-color: #00dddd;
+  box-shadow: 2px 2px 3px #999;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.email:hover {
+  background-color: #01bbbb;
+}
+
+.float {
+  margin-top: 16px;
+}
+/*Terminos++++++++++++++++++++++++++++++*/
+.terminos {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 3px black;
+}
+
+p,
+h2 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+}
