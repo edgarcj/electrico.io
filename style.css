@@ -35,7 +35,7 @@ body {
   height: 100vh;
   padding: 12px;
   /*Visual*/
-  background-color: #73c2fb;
+  background-color: #27a2ff;
 }
 
 .foco {
@@ -130,7 +130,7 @@ ul {
 .servicios ul {
   margin-top: 1rem;
   font-size: 1.4rem;
-  color: white;
+  color:black;
 }
 
 .servicios ul li {
@@ -157,6 +157,10 @@ ul {
   width: 75%;
   height: 85vh;
 }
+
+.ubicacion p{
+  font-size: small;
+}
 /*Pie de Página++++++++++++++++++++++++++++++++*/
 .foot {
   display: flex;
@@ -176,7 +180,7 @@ ul {
   position: fixed;
   display: flex;
   bottom: 90px;
-  right: 70px;
+  left: 10px;
   text-align: center;
   font-size: 30px;
 }
