@@ -82,7 +82,7 @@ body {
   border-radius: 5px;
   background-color: black;
   box-shadow: 0.5em 1em 0.5em rgba(0, 0, 0, 0.493);
-  transition: box-shadow 600ms ease-in;
+  transition: box-shadow 300ms ease-in;
 }
 
 .menu:hover {
