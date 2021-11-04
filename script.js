@@ -41,3 +41,10 @@ self.addEventListener("fetch", (e) => {
     })
   );
 });
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker
+    .register("./script.js")
+    .then((reg) => console.log("Registro de sw exitoso", reg))
+    .then((err) => console.warn("error al tratar de registrar el sw", err));
+}
